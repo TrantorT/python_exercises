@@ -27,3 +27,8 @@ for i in range(0,50):
     lista2.append(n)
 print(lista2)
 
+
+#list of even numbers
+even_numbers = list(range(2, 11, 2))
+print(even_numbers)
+
