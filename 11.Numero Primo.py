@@ -1,18 +1,21 @@
-n = int(input("Escolha um numero"))
 count = 0
-i = 1
-while i <= n:
-    if n % i == 0:
-        count+=1
+numero = int(input("Pick a number! "))
+i=1
+
+#a prime number is only divisible by 1 and itself
+while i <= numero:
+    if numero % i == 0 :
+        print(f"{i} is a Divisor of {numero}")
         i+=1
-    elif n % i ==1:
         count+=1
     else:
         i+=1
-    
 
 
-print(count)
+if count == 2:
+    print(f"Number {numero} is a Prime!")
+else:
+    print(f"Number {numero} is NOT a Prime!")
 
             
 
