@@ -1,14 +1,24 @@
 #https://www.practicepython.org/exercise/2014/02/15/03-list-less-than-ten.html
 
-lista = [1,2,3,4,5,6,7,8,9,0,2,4,5,6,23,231,543,45,6,54,21,1,3,]
+import random
 
-lista2 =[]
+size = int(input("How big you want the list to be?: "))
 
-for l in lista:
+#sequential list
+#list1 = list(range(0,size,1))
+#print(list1)
+
+#random list
+listrand =  random.sample(range(1, 100), size)
+print(listrand)
+
+list2 =[]
+
+for l in listrand:
     if l <6:
-        print(l)
-        lista2.append(l)
+        #print(l)
+        list2.append(l)
 
 
-print(lista2)
+print(f"This list only contains numbers equal or smaller than 5: {list2}")
     
