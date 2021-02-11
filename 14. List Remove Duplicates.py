@@ -7,7 +7,7 @@ for i in range(0,50):
 print(lista1)
 
 #a set has no duplicates, thats the easy way
-x = set(lista2)
+x = set(lista1)
 print(x)
 
 #another list
