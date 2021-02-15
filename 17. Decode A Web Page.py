@@ -11,4 +11,9 @@ soup = bs4.BeautifulSoup(r_html,'html.parser')
 
 title = soup.find('title').string
 
-print(title)
+titulos=soup.find_all(class_="card__title headline")
+for t in titulos:
+    print(t.find_all(class_="card__faux-block-link"))
+    
+
+#print(titulos)
