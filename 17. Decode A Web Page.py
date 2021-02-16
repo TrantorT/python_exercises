@@ -1,7 +1,7 @@
 import bs4
 import requests
 
-url = 'http://www.publico.pt'
+url = 'http://www.record.pt'
 r = requests.get(url)
 r_html = r.text
 
@@ -11,9 +11,9 @@ soup = bs4.BeautifulSoup(r_html,'html.parser')
 
 title = soup.find('title').string
 
-titulos=soup.find_all(class_="card__title headline")
+titulos=soup.find_all(class_="eventAnalytics")
 for t in titulos:
-    print(t.find_all(class_="card__faux-block-link"))
+    print(t.text)
     
 
 #print(titulos)
